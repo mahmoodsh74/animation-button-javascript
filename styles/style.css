@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "vazie";
+  src: url("../fonts/vazir.eot");
+  src: url("../fonts/vazir.ttf") format("truetype"),
+    url("../fonts/vazir.woff2") format("woff2"),
+    url("../fonts/vazir.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "vazir";
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #004730;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  background: #c00;
+  margin: 0 50px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+a:nth-child(2) {
+  background: #106c97;
+}
+
+span {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: animate 1s linear infinite;
+  -webkit-animation: animate 1s linear infinite;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
